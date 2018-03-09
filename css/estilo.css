@@ -39,7 +39,6 @@ body{
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
-
 .blocoLink a {
     color: #494949;
     display: block;
@@ -50,9 +49,34 @@ body{
     padding: 10px 0;
     transition: 0.1s ease;
 }
-
 .blocoLink a:hover {
     background-color: rgb(152, 198, 204);
     color: #fff;
+}
+
+@media (max-width: 768px){
+    .bloco {
+        width: calc(100%/2 - 20px);
+    }
+    .blocoImagem {
+        height: calc((100vw /2 - 20px) /2);
+    }
+}
+@media (max-width: 425px){
+    .bloco {
+        width: calc(100% - 20px);
+    }
+    .blocoImagem {
+        height: calc((100vw - 20px) /2);
+    }
+}
+@media (max-width: 320px){
+    .bloco {
+        width: calc(100%);
+        margin: 10px 0;
+    }
+    .blocoImagem {
+        height: calc(100vw /2);
+    }
 }
 
